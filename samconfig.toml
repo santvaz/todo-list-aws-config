@@ -1,0 +1,4 @@
+[default.deploy.parameters] 
+stack_name = "todo-list-production" 
+resolve_s3 = true 
+region = "us-east-1" 
