@@ -1,4 +1,6 @@
-[default.deploy.parameters] 
-stack_name = "todo-list-production" 
-resolve_s3 = true 
-region = "us-east-1" 
+[default.deploy.parameters]
+stack_name = "todo-list-staging"
+resolve_s3 = true
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+confirm_changeset = false
