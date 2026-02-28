@@ -1,7 +1,13 @@
 version = 0.1
+
 [default.deploy.parameters]
-stack_name = "todo-list-production"
-resolve_s3 = true
 region = "us-east-1"
 capabilities = "CAPABILITY_IAM"
+resolve_s3 = true
 confirm_changeset = false
+
+[staging.deploy.parameters]
+stack_name = "todo-list-staging"
+
+[production.deploy.parameters]
+stack_name = "todo-list-production"
